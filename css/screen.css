@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	font: 11px/18px verdana, helvetica, arial, sans-serif;
+	color: #777;
+	}
+	
+body { background-color: #fff; }
+	
+#wrap {
+	width: 931px;
+	height: auto;
+	background: fixed transparent url(../media/images/wrap-bg.jpg) repeat-y 281px 0;
+	}
+
+#wrap-info {
+	position: absolute;
+	top: 80px;
+	left: 40px;
+	width: 200px;
+	}
+
+#info {
+	position: fixed; 
+	width: 200px;
+	}
+
+a#logo {
+	float: left;
+	width: 17px;
+	height: 30px;
+	background: transparent url(../media/images/info-logo.jpg) no-repeat 0 0;
+	text-indent: -999em;
+	border-bottom: 0px;
+	margin-bottom: 25px;
+	}
+	
+a#logo:hover { background: transparent url(../media/images/info-logo.jpg) no-repeat 0 -30px; }
+
+ul#port { display: inline; list-style: none; }
+
+ul#port li a {
+	float: left;
+	width: 30px;
+	height: 30px;
+	text-indent: -999em;
+	border: 1px solid #fff;
+	margin-right: 8px;
+	}
+	
+ul#port li a#port-ba { background: transparent url(../media/images/port-ba.jpg) no-repeat 0 0; }
+ul#port li a#port-cc { background: transparent url(../media/images/port-cc.jpg) no-repeat 0 0; }
+ul#port li a#port-tbt { background: transparent url(../media/images/port-tbt.jpg) no-repeat 0 0; }
+ul#port li a#port-bb { background: transparent url(../media/images/port-bb.jpg) no-repeat 0 0; }
+ul#port li a#port-ltp { background: transparent url(../media/images/port-ltp.jpg) no-repeat 0 0; }
+
+ul#port li a#port-ba:hover, #info ul li a#port-ba.selected { background-position: 0 -30px; border: 1px solid #ffc300; }
+ul#port li a#port-cc:hover, #info ul li a#port-cc.selected { background-position: 0 -30px; border: 1px solid #ffc300; }
+ul#port li a#port-tbt:hover, #info ul li a#port-tbt.selected { background-position: 0 -30px; border: 1px solid #ffc300; }
+ul#port li a#port-bb:hover, #info ul li a#port-bb.selected { background-position: 0 -30px; border: 1px solid #ffc300; }
+ul#port li a#port-ltp:hover, #info ul li a#port-ltp.selected { background-position: 0 -30px; border: 1px solid #ffc300; }
+
+#info p + p + p + ul + p { padding-top: 50px; }
+
+#resume,
+#portfolio {
+	float: left;
+	width: 620px;
+	height: auto;
+	margin-left: 323px;
+	padding: 135px 0 80px 0;
+	}
+
+#education,
+#work-experience,
+#languages-software,
+#associations {
+	margin-bottom: 60px;
+	}
+
+#resume ul { list-style-type: circle; margin-left: 16px; }
+	
+h1, h2, p, dl, ul, img { margin-bottom: 20px; }
+
+h1 { clear: both; }
+h2 { color: #ccc; font-style: italic; }
+
+a { text-decoration: none; border-bottom: 1px dotted #ddd; }
+a:hover { color: #ffc300; border-bottom: 1px dotted #ffc300; }
+
+dt, dt a { color: #222; }
+
+.clear { clear: both; }
