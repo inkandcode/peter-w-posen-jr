@@ -1,28 +1,34 @@
 * {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	font: 11px/18px verdana, helvetica, arial, sans-serif;
-	color: #777;
+	color: #888;
 	}
 	
-body { background-color: #fff; }
+body { background: #fff url(../media/images/bg-body.jpg) repeat-y fixed center;}
+
+h1, h2, p, dl, img { margin-bottom: 20px; }
+
+h1 { clear: both; }
+h2 { color: #ccc; font-style: italic; }
+
+a { color: #444; text-decoration: none; border-bottom: 1px dotted #ddd; }
+a:hover { color: #ffc300; border-bottom: 1px dotted #ffc300; }
+
+dt, dt a { color: #444; }
 	
 #wrap {
+	position: relative;
 	width: 931px;
 	height: auto;
-	background: fixed transparent url(../media/images/wrap-bg.jpg) repeat-y 281px 0;
-	}
-
-#wrap-info {
-	position: absolute;
-	top: 80px;
-	left: 40px;
-	width: 200px;
 	}
 
 #info {
-	position: fixed; 
+	position: absolute;
+	top: 80px;
+	left: 0;
 	width: 200px;
+	height: auto;
 	}
 
 a#logo {
@@ -37,7 +43,12 @@ a#logo {
 	
 a#logo:hover { background: transparent url(../media/images/info-logo.jpg) no-repeat 0 -30px; }
 
-ul#port { display: inline; list-style: none; }
+ul#port {
+	list-style: none;
+	width: 200px;
+	height: 74px;
+	margin-bottom: 20px;
+	}
 
 ul#port li a {
 	float: left;
@@ -45,30 +56,55 @@ ul#port li a {
 	height: 30px;
 	text-indent: -999em;
 	border: 1px solid #fff;
-	margin-right: 8px;
+	margin-right: 10px;
+	margin-bottom: 10px;
 	}
 	
-ul#port li a#port-ba { background: transparent url(../media/images/port-ba.jpg) no-repeat 0 0; }
-ul#port li a#port-cc { background: transparent url(../media/images/port-cc.jpg) no-repeat 0 0; }
-ul#port li a#port-tbt { background: transparent url(../media/images/port-tbt.jpg) no-repeat 0 0; }
-ul#port li a#port-bb { background: transparent url(../media/images/port-bb.jpg) no-repeat 0 0; }
-ul#port li a#port-ltp { background: transparent url(../media/images/port-ltp.jpg) no-repeat 0 0; }
+ul#port li a#port-ba 	{ background: transparent url(../media/images/port-ba-1.jpg) no-repeat 0 0; }
+ul#port li a#port-cc 	{ background: transparent url(../media/images/port-cc-1.jpg) no-repeat 0 0; }
+ul#port li a#port-tbt 	{ background: transparent url(../media/images/port-tbt-1.jpg) no-repeat 0 0; }
+ul#port li a#port-bb 	{ background: transparent url(../media/images/port-bb-1.jpg) no-repeat 0 0; }
+ul#port li a#port-ltp 	{ background: transparent url(../media/images/port-ltp-1.jpg) no-repeat 0 0; margin-right: 0; }
+ul#port li a#port-157 	{ background: transparent url(../media/images/port-157-1.jpg) no-repeat 0 0; }
+ul#port li a#port-amp 	{ background: transparent url(../media/images/port-amp-1.jpg) no-repeat 0 0; }
+ul#port li a#port-as 	{ background: transparent url(../media/images/port-as-1.jpg) no-repeat 0 0; }
+ul#port li a#port-f 	{ background: transparent url(../media/images/port-f-1.jpg) no-repeat 0 0; }
+ul#port li a#port-mh 	{ background: transparent url(../media/images/port-mh-1.jpg) no-repeat 0 0; margin-right: 0; }
 
-ul#port li a#port-ba:hover, #info ul li a#port-ba.selected { background-position: 0 -30px; border: 1px solid #ffc300; }
-ul#port li a#port-cc:hover, #info ul li a#port-cc.selected { background-position: 0 -30px; border: 1px solid #ffc300; }
-ul#port li a#port-tbt:hover, #info ul li a#port-tbt.selected { background-position: 0 -30px; border: 1px solid #ffc300; }
-ul#port li a#port-bb:hover, #info ul li a#port-bb.selected { background-position: 0 -30px; border: 1px solid #ffc300; }
-ul#port li a#port-ltp:hover, #info ul li a#port-ltp.selected { background-position: 0 -30px; border: 1px solid #ffc300; }
+ul#port li a#port-ba:hover,
+ul#port li a#port-ba.selected,
+ul#port li a#port-cc:hover,
+ul#port li a#port-cc.selected,
+ul#port li a#port-tbt:hover,
+ul#port li a#port-tbt.selected,
+ul#port li a#port-bb:hover,
+ul#port li a#port-bb.selected,
+ul#port li a#port-ltp:hover,
+ul#port li a#port-ltp.selected,
+ul#port li a#port-157:hover,
+ul#port li a#port-157.selected,
+ul#port li a#port-amp:hover,
+ul#port li a#port-amp.selected,
+ul#port li a#port-as:hover,
+ul#port li a#port-as.selected,
+ul#port li a#port-f:hover,
+ul#port li a#port-f.selected,
+ul#port li a#port-mh:hover,
+ul#port li a#port-mh.selected {
+	background-position: 0 -30px;
+	border: 1px solid #ffc300;
+	}
 
-#info p + p + p + ul + p { padding-top: 50px; }
-
+#intro,
 #resume,
+#about,
 #portfolio {
-	float: left;
+	position: absolute;
+	top: 135px;
+	left: 281px;
 	width: 620px;
 	height: auto;
-	margin-left: 323px;
-	padding: 135px 0 80px 0;
+	padding-bottom: 80px;
 	}
 
 #education,
@@ -79,15 +115,3 @@ ul#port li a#port-ltp:hover, #info ul li a#port-ltp.selected { background-positi
 	}
 
 #resume ul { list-style-type: circle; margin-left: 16px; }
-	
-h1, h2, p, dl, ul, img { margin-bottom: 20px; }
-
-h1 { clear: both; }
-h2 { color: #ccc; font-style: italic; }
-
-a { text-decoration: none; border-bottom: 1px dotted #ddd; }
-a:hover { color: #ffc300; border-bottom: 1px dotted #ffc300; }
-
-dt, dt a { color: #222; }
-
-.clear { clear: both; }
